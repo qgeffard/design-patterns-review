@@ -8,7 +8,7 @@ public class App {
         IMapper executionMapper = MapperFactory.getMapper(Mapper.EXECUTION);
         IMapper requestMapper = MapperFactory.getMapper(Mapper.REQUEST);
 
-        log.info("My name is {}", executionMapper.getMapperName());
-        log.info("My name is {}", requestMapper.getMapperName());
+        executionMapper.map();
+        requestMapper.map();
     }
 }
